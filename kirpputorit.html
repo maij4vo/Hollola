@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hollola</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Etusivu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="junat.html">Junat</a>
+      </li>
+      <li class="nav-item">
+ <a class="nav-link " href="bussit.html">Bussit</a>
+      </li>
+      <li class="nav-item">
+               <a class="nav-link" href="kirpputorit.html">Kirpputorit</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h1>Kirpputorit</h1>
+  <p>Tästä löydät parhaat kirpputorit Hollolassa!</p> 
+</div>
+
+<div class="container-fluid mt-4">
+  <div id="vastaus"></div>
+</div>
+
+<script>
+const data = {
+  title: "Kirpputorit Hollolassa ja Lahdessa",
+  items: [
+    { kaupunki: "Hollola", nimi: "Kirpputori Walkkari", kuvaus: "Suosittu paikallinen kirpputori", linkki: "https://kirpputorit24.fi/city/kirpputori-hollola/" },
+    { kaupunki: "Hollola", nimi: "Hetki ry kierrätyskeskus", kuvaus: "Kierrätyskeskus ja second hand", linkki: "https://kirpputorit24.fi/city/kirpputori-hollola/" },
+    { kaupunki: "Lahti", nimi: "Ahtialan kirpputori", kuvaus: "Iso itsepalvelukirppis Lahdessa", linkki: "https://www.kirppikset.info/paikkakunta/lahti/" },
+    { kaupunki: "Lahti", nimi: "Fida Lahti", kuvaus: "Hyvä valikoima vaatteita ja tavaroita", linkki: "https://www.kirppikset.info/paikkakunta/lahti/" },
+    { kaupunki: "Lahti", nimi: "UFF Lahti", kuvaus: "Second hand vaatteita", linkki: "https://www.kirppikset.info/paikkakunta/lahti/" }
+  ]
+};
+
+function naytaKirpputorit(data) {
+
+  let teksti = `<h2 class="text-center mb-4">${data.title}</h2>
+                <div class="row">`;
+
+  for (let i = 0; i < data.items.length; i++) {
+    let k = data.items[i];
+
+    teksti += `
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">${k.nimi}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">${k.kaupunki}</h6>
+            <p class="card-text">${k.kuvaus}</p>
+            <a href="${k.linkki}" target="_blank" class="btn btn-success">Lisätietoa</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  teksti += `</div>`;
+
+  document.getElementById("vastaus").innerHTML = teksti;
+}
+naytaKirpputorit(data);
+</script>
+
+<p>Myös esim. Hennalasta löytyy Hennalan kirpputori, joka on myösiso ja hyvä!</p>
+<p>Kierrätyskeskus Patina, jota ei ole listassa on myös erittäin hyvä, se sijaitsee Hennalan vieressä.</p>
+
+<footer>
+  © 2026 💚
+</footer>
+
+
+</body>
+</html>

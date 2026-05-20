@@ -1,0 +1,204 @@
+.header {
+    background-color: #1db30c;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #22641a !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fbf9f9;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1cac1f;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #134f22;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.rivi {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-group {
+    width: 100%;
+}
+
+
+.list-group-item {
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+
+
+/* fontit */
+.navbar-brand {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.15em;
+}
+
+/* Navin linkit */
+.navbar .nav-link {
+font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+
+/* yleiset asetukset */
+head {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100,
+    "GRAD" 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(204, 255, 192);
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100,
+    "GRAD" 0;color: #000000;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
+}
+
+
+h1 {
+    position: static;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 4px;
+    padding-top: 10px;
+}
+
+.h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.carousel-inner img {
+      width: 100%; 
+      margin: auto;
+      min-height:200px; }
+
+#demo {width:100%;
+       max-width:800px;
+       margin:auto;
+}
+
+
+.rivi {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.linkit {
+  width: 60%;
+  font-size: 25px;
+}
+
+.kuva {
+  width: 40%;
+}
+
+.kuva img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+}
+
+
+footer {
+  background-color: #1db30c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1db30c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
